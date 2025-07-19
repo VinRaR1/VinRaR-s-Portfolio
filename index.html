@@ -103,6 +103,33 @@
       font-size: 1.3rem;
       backdrop-filter: blur(7px);
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .view-projects-link {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.9em 2.5em;
+      font-size: 1.08rem;
+      font-family: 'Montserrat', 'Aeonik', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(30,35,86,0.82);
+      border-radius: 32px;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      box-shadow: 0 2px 12px 0 rgba(14,18,60,0.17);
+      transition: background 0.2s, box-shadow 0.2s, color 0.2s, transform 0.2s;
+      border: none;
+      outline: none;
+    }
+    .view-projects-link:hover, .view-projects-link:focus {
+      background: #fff;
+      color: #1e2356;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 4px 24px 0 rgba(30,35,86,0.22);
+      text-decoration: none;
     }
     @media (max-width: 600px) {
       h1 { font-size: 2rem; margin-left: 20px; }
@@ -128,10 +155,10 @@
   </nav>
   <section class="about-section" id="about">
     <div class="about-card">
-      Hi, I'm an aspiring developer passionate about creating beautiful and functional digital experiences.  
-      I thrive on turning ideas into reality through clean code and thoughtful design.  
-      Whether it's web, app, or UI/UX, I'm always eager to learn, build, and grow.<br><br>
-      Welcome to my portfolio!
+      Hi, I'm an aspiring developer passionate about creating beautiful and functional digital experiences.<br>
+      I thrive on turning ideas into reality through clean code and thoughtful design.<br><br>
+      Welcome to my Portfolio!
+      <a class="view-projects-link" href="projects.html">View Projects</a>
     </div>
   </section>
 </body>
